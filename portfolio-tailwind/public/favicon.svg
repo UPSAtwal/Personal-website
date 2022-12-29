@@ -25,9 +25,9 @@
       <stop style="stop-color: #f37335;" offset="1"/>
     </linearGradient>
   </defs>
-  <style>
+  <!-- <style>
     @media (prefers-color-scheme:dark){:root{filter:invert(100%)}}
-  </style>
+  </style> -->
   <g transform="matrix(0.026128, 0, 0, 0.026128, 8.067644, 4.385803)" style="">
     <defs>
       <linearGradient gradientUnits="userSpaceOnUse" x1="17.822" y1="26" x2="17.822" y2="35.849" id="color-1-0" spreadMethod="pad" gradientTransform="matrix(1, 0, 0, 1, 0, -2.196471)" xlink:href="#color-1"/>
