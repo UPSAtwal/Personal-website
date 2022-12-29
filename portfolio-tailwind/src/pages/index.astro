@@ -1,0 +1,43 @@
+---
+// Component Imports
+//import Button from '../components/Button.astro';
+import CommonStuff from './common-stuff.astro';
+import '../styles/global.css';
+const pageTitle = 'Uday\'s Portfolio';
+
+//import LocomotiveScroll from 'locomotive-scroll';
+//import '../styles/locomotive-scroll.css';
+//const scroll = new LocomotiveScroll();
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,400;0,700;1,700&family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
+		<title>{pageTitle}</title>
+		
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,400;0,700;1,700&family=Inter:wght@500;700;800&display=swap');
+		</style>
+	</head>
+
+	<body>
+		<div class="grid place-items-center h-screen content-center">
+		<h1 class="bg-gradient-to-r from-red-600 via-blue-500 to-indigo-600 bg-clip-text text-transparent font-extrabold font-family-Inter">
+			Hi! <span role="img" aria-label="waving hand" class="wave">👋🏼</span> I'm Uday
+		</h1>
+		
+		<a href="/about" class="font-family-Bellota"> About </a>
+		
+			<!-- <Button>Tailwind Button in Astro!</Button> -->
+			<!-- <a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a> -->
+		</div>
+	</body>
+</html>
