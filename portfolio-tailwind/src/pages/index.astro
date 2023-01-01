@@ -3,18 +3,16 @@ const pageTitle = 'Uday\'s Portfolio';
 
 import Header from '../components/header.astro';
 import Footer from '../components/footer.astro';
-//import Button from '../components/Button.astro';
-import CommonStuff from './common-stuff.astro';
+// import imageConfetti from '../components/image-confetti.astro';
+// import CommonStuff from '../components/common-stuff.astro';
 
 import '../styles/global.css';
 
-import LocomotiveScroll from 'locomotive-scroll';
-import '../styles/locomotive-scroll.css';
-import VanillaTilt from 'vanilla-tilt';
-//const scroll = new LocomotiveScroll(
-//	{ el: document.querySelector('h1'),
-//  smooth: true}
-//);
+// import LocomotiveScroll from '../components/locomotive-scroll.astro';
+// import '../styles/locomotive-scroll.css';
+// import VanillaTilt from 'vanilla-tilt';
+// import '../styles/vanilla-tilt.css';
+
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
@@ -44,20 +42,22 @@ import VanillaTilt from 'vanilla-tilt';
 		<Header />
 			<div class="grid place-items-center h-screen content-center">
 			<span class="data-tilt data-tilt-full-page-listening rounded-xl shadow-lg">
-				<img src="/Uday-cutout.png" alt="Portrait view of Uday" class="border-white border-rounded rounded-full w-1/2 mx-auto data-tilt object-cover"/> 
+				<imageConfetti>
+				<img src="/Uday-cutout.png" alt="Portrait view of Uday" class="border-white border-rounded rounded-full w-1/2 mx-auto data-tilt object-cover"/>
+				</imageConfetti> 
 			</span>
 				<div class="flex">
 					<h1 class="pre inline-block dark text-white bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent font-extrabold font-family-Inter text-5xl">Hi! </h1> 
 						<h1><span role="img" aria-label="waving hand emoji" class="inline-block wave">👋🏼</span></h1>
 					<h1 class="inline-block dark text-white bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent font-extrabold font-family-Inter text-5xl">I'm Uday</h1>
 				</div>
-			<h2 class="dark text-white font-family-Inter">I'm a student at Thapar Institute of Technology, Patiala</h2>
-			<h2 class="dark text-white font-family-Inter">I'm a <span class="text-red-600"> Co-Founder & Director</span> of a startup called <span class="bg-gradient-to-r bg-clip-text text-transparent font-extrabold from-emerald-500 to-emerald-900">RetailQ</span></h2>
-
+				<div class="rounded-lg">	
+					<h2 class="dark text-white font-family-Inter">I'm a student at Thapar Institute of Technology, Patiala</h2>
+					<h2 class="dark text-white font-family-Inter">and the <span class="text-red-600"> Co-Founder & Director</span> of a startup called <span class="bg-gradient-to-r bg-clip-text text-transparent font-extrabold from-emerald-500 to-emerald-900">RetailQ</span></h2>
+				</div>
 				<!-- <Button>Tailwind Button in Astro!</Button> -->
 			</div>
 		<Footer />
-		<script type="text/javascript" src="../../node_modules/vanilla-tilt/src/vanilla-tilt.js">
-		</script>
+		<!-- <script type="text/javascript" src="../../node_modules/vanilla-tilt/src/vanilla-tilt.js"> -->
 	</body>
 </html>

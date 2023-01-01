@@ -13,5 +13,5 @@ import VanillaTilt from 'vanilla-tilt';
 export default defineConfig({
 	integrations: [mdx(), tailwind()],
 	site: 'https://uday.codes',
-//	base: '/my-repo', --  dont use if using a custom domain 
+	// base: '/portfolio-tailwind', //--  dont use if using a custom domain 
 });  
